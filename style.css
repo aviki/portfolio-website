@@ -372,7 +372,7 @@ header .navbar ul li a.active::before {
 
 .portfolio {
   background-color: #f5f8fd;
-  padding: 100px 15px;
+  padding: 100px 7px;
 }
 
 .portfolio .section-title h1:before {
@@ -412,14 +412,16 @@ header .navbar ul li a.active::before {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .portfolio .portfolio-gallery .item {
-  background-color: #d5d5d5;
-  flex: 0 0 calc(33.33% - 10px);
-  max-width: calc(33.33% - 10px);
-  margin-bottom: 16px;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  position: relative;
+  padding: 8px;
+}
+
+.portfolio .portfolio-gallery .item .inner {
   position: relative;
 }
 
