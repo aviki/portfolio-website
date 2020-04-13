@@ -378,3 +378,30 @@ header .navbar ul li a.active::before {
 .portfolio .section-title h1:before {
   left: 30%;
 }
+
+.portfolio .filter-buttons {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.portfolio .filter-buttons ul {
+  list-style: none;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.portfolio .filter-buttons ul li {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0px 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 0px;
+}
+
+.portfolio .filter-buttons ul li.active {
+  color: plum;
+  border-bottom: 2px solid plum;
+}
