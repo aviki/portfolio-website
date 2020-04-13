@@ -173,12 +173,12 @@ header .navbar ul li a.active::before {
   background-color: white;
 }
 
-.about-me .section-title {
+.section-title {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.about-me .section-title h1 {
+.section-title h1 {
   display: inline-block;
   font-size: 35px;
   text-transform: uppercase;
@@ -189,7 +189,7 @@ header .navbar ul li a.active::before {
   padding-bottom: 5px;
 }
 
-.about-me .section-title h1:before {
+.section-title h1:before {
   content: "";
   left: 0;
   position: absolute;
@@ -327,31 +327,6 @@ header .navbar ul li a.active::before {
   max-width: 100%;
 }
 
-.skills .section-title h1 {
-  display: inline-block;
-  font-size: 35px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: black;
-  margin: 0 0 10px;
-  position: relative;
-  padding-bottom: 5px;
-}
-
-.skills .section-title h1:before {
-  content: "";
-  left: 0;
-  position: absolute;
-  height: 3px;
-  right: 30%;
-  background-color: plum;
-  bottom: 0px;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
 .skills .skills-content .skill-box {
   flex: 0 0 100%;
   max-width: 100%;
@@ -387,4 +362,19 @@ header .navbar ul li a.active::before {
   position: absolute;
   right: 0;
   top: -30px;
+}
+
+/* Portfolio Section */
+
+.text-center {
+  text-align: center;
+}
+
+.portfolio {
+  background-color: #f5f8fd;
+  padding: 100px 15px;
+}
+
+.portfolio .section-title h1:before {
+  left: 30%;
 }
