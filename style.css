@@ -296,7 +296,7 @@ header .navbar ul li a.active::before {
 .skills .skills-content {
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 .skills .img {
@@ -353,11 +353,38 @@ header .navbar ul li a.active::before {
 }
 
 .skills .skills-content .skill-box {
-  background-color: #d5d5d5;
   flex: 0 0 100%;
   max-width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-.skills .skills-content .skill-box {
+.skills .skills-content .skill-box h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  margin: 0 0 10px;
+}
+
+.skills .skills-content .skill-box .skill-bar {
+  height: 8px;
+  background-color: #d5d5d5;
+  position: relative;
+}
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in {
+  height: 8px;
+  background-color: plum;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span {
+  color: #838383;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  top: -30px;
 }
