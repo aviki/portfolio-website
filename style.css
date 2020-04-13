@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -32,18 +36,14 @@ header {
   z-index: 10;
 }
 
+header.fixed {
+  background-color: #e2dee6;
+  position: fixed;
+  border-color: #eeeeee;
+}
 header .row {
   justify-content: space-between;
   align-items: center;
-}
-
-header .brand-name a {
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 600;
-  color: black;
-  text-transform: uppercase;
-  position: relative;
 }
 
 header .navbar ul {
@@ -67,6 +67,10 @@ header .navbar ul li a {
   position: relative;
 }
 
+header.fixed .navbar ul li a {
+  color: black;
+}
+
 header .navbar ul li a::before {
   content: "";
   height: 3px;
@@ -76,6 +80,14 @@ header .navbar ul li a::before {
   right: 0px;
   bottom: -1px;
   transition: all 0.5s ease;
+}
+
+header.fixed .navbar ul li a::before {
+  background-color: rgb(88, 80, 88);
+}
+
+header.fixed .navbar ul li a:hover::before {
+  background-color: rgb(88, 80, 88);
 }
 
 header .navbar ul li a:hover::before {

@@ -1,3 +1,5 @@
+//FILTER
+
 const filterButtons = document.querySelector("#filter-btns").children;
 const items = document.querySelector(".portfolio-gallery").children;
 
@@ -20,3 +22,31 @@ for (let i = 0; i < filterButtons.length; i++) {
     }
   });
 }
+
+//HEADER FIXED
+
+window.onscroll = function () {
+  const docScrollTop = document.documentElement.scrollTop;
+
+  if (window.innerWidth > 991) {
+    if (docScrollTop > 100) {
+      document.querySelector("header").classList.add("fixed");
+    } else {
+      document.querySelector("header").classList.remove("fixed");
+    }
+  }
+};
+
+//NAVBAR LINKS
+
+const navbar = document.querySelector(".navbar");
+a = navbar.querySelectorAll("a");
+
+a.forEach(function (element) {
+  element.addEventListener("click", function () {
+    for (let i = 0; i < a.length; i++) {
+      a[i].classList.remove("active");
+    }
+    this.classList.add("active");
+  });
+});
