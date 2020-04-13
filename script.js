@@ -1,11 +1,22 @@
-import { gsap } from "gsap";
-import { TweenLite } from "gsap/all";
-import { TweenMax } from "gsap/all";
-import { Power1 } from "gsap/all";
-import { Bounce } from "gsap/all";
-import { Elastic } from "gsap/all";
-import { _createElement } from "gsap/CSSPlugin";
+const filterButtons = document.querySelector("#filter-btns").children;
+const items = document.querySelector(".portfolio-gallery").children;
 
-("use strict");
+for (let i = 0; i < filterButtons.length; i++) {
+  filterButtons[i].addEventListener("click", function () {
+    for (let j = 0; j < filterButtons.length; j++) {
+      filterButtons[j].classList.remove("active");
+    }
+    this.classList.add("active");
+    const target = this.getAttribute("data-target");
 
-window.addEventListener("DOMContentLoaded", init);
+    for (let k = 0; k < items.length; k++) {
+      items[k].style.display = "none";
+      if (target == items[k].getAttribute("data-id")) {
+        items[k].style.display = "block";
+      }
+      if (target == "all") {
+        items[k].style.display = "block";
+      }
+    }
+  });
+}
